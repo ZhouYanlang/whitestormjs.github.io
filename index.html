@@ -2,9 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>WhitestormJS Documentation (API Reference)</title>
+    <meta name="description" content="Whitestorm.js is a framework for 3D web apps built with Three.js technology. It implements a core for fast development of a 3D scene with physics.">
+    <meta name="keywords" content="three.js, whitestorm.js, framework, 3d, enine, webworkers, physics">
+    <link rel="author" href="https://plus.google.com/113564780584588197070"/>
+
+    <!-- Bots -->
+    <meta name="ROBOTS" CONTENT="NOARCHIVE">  
+    <meta name="googlebot" content="noodp">
+
+    <!-- Other -->
+    <meta name="copyright" content="Alexander Buzin"> 
+    <meta name="language" content="english" />
+
+
+    <!-- Opengraph -->
+    <meta property="og:title" content='WhitestormJS Documentation (API Reference)'/>
+    <meta property="og:image" content="https://raw.githubusercontent.com/WhitestormJS/whitestorm.js/master/development/art/logo/default.png"/>
+    <meta property="og:url" content="http://whitestormjs.xyz/"/>
+    <meta property="og:description" content="Whitestorm.js is a framework for 3D web apps built with Three.js technology. It implements a core for fast development of a 3D scene with physics."/>
+    <meta property="fb:admins" content="alexbuzin88"/>
+
+    <!-- Twitter cards -->
+    <meta property="twitter:title" content='WhitestormJS Documentation (API Reference)'/>
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/WhitestormJS/whitestorm.js/master/development/art/logo/default.png"/>
+    <meta property="twitter:url" content="http://whitestormjs.xyz/"/>
+    <meta property="twitter:description" content="Whitestorm.js is a framework for 3D web apps built with Three.js technology. It implements a core for fast development of a 3D scene with physics."/>
+    <meta property="twitter:card" content="summary"/>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -120,7 +146,7 @@
         <ul class="toc-footer">
             <li><a href='http://threejs.org/'><b>Three.js <i>r75</i></b></a></li>
             <li><a href='https://github.com/WhitestormJS/Physijs'>Get custom <b>Physijs</b></a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://plus.google.com/113564780584588197070?rel=author'>Google</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -142,18 +168,18 @@
 </ul>
 </blockquote>
 
-<p><strong>Whitestorm.js</strong> is a <em>framework</em> for 3D web apps built with Three.js technology.</p>
+<p><strong>Whiestorm.js</strong> is a <em>framework</em> for 3D web apps built with Three.js technology.</p>
 
-<p>It implements a <em>core</em> with component system and plugin support for fast development of a 3D scene with physics.</p>
+<p>It implements a <em>core</em> with component system and plugin support for fast development of 3D scene with physics.</p>
 
-<p>Automizing your web app with <strong>Whitestorm.js</strong> is fast and comfortable. You can use whitestorm&rsquo;s API for creating different shapes instead of writing common functions each time. This engine has physics support implemented by <a href="https://github.com/WhitestormJS/Physijs">custom Physi.js</a> library, which is much faster than others. Framework provides extended component control and high frame rate, because it uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers"><strong>WebWorkers</strong> technology</a> for multithreading.</p>
+<p>Automizing your web app with <strong>whitestorm.js</strong> is fast and comfortable. You can use whitestorm&rsquo;s API for creating different shapes instead of writing common functions each time. This engine has physics support implemented by <a href="https://github.com/WhitestormJS/Physijs">custom Physi.js</a> library, which is much faster than others. Framework provides extended component control and high frame rate, because it uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers"><strong>WebWorkers</strong> technology</a> for multithreading.</p>
 
-<p><strong>Our framework&rsquo;s goal is to simplify coding workflow and add our plugin&rsquo;s features to the 3D part of the web.</strong></p>
+<p><strong>Framework&rsquo;s goal is to simplify coding workflow and add plugin&rsquo;s feature to 3D part of the web.</strong></p>
 
 <h1 id="getting-started">Getting started</h1>
 
 <blockquote>
-<p>Include Three.js and Physi.js in your document. Then include Whitestorm.js.
+<p>Include Three.js and Physi.js to your document. Then include Whitestorm.js
 Define your world with parameters:</p>
 </blockquote>
 <pre class="highlight javascript"><code><span class="kd">var</span> <span class="nx">GAME</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WHS</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
@@ -1100,7 +1126,7 @@ This function checks for <code class="prettyprint">kind</code> property and turn
 
 <p>A <strong>cylinder</strong> is one of the most basic curvilinear geometric shapes, the surface <em>formed by the points at a fixed distance from a given straight line, the axis of the cylinder.</em> The solid enclosed by this surface and by two planes perpendicular to the axis is also called a cylinder. The surface area and the volume of a cylinder have been known since deep antiquity.</p>
 
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Cylinder-with-blender.png" width="250"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Cylinder-with-blender.png" alt="rendered cylinder" width="250"></p>
 
 <p><code class="prettyprint">WHS.Cylinder</code> creates Cylinder object by it&rsquo;s <code class="prettyprint">radiusTop</code>, <code class="prettyprint">radiusBottom</code> and <code class="prettyprint">height</code></p>
 
@@ -1176,7 +1202,7 @@ This function checks for <code class="prettyprint">kind</code> property and turn
 
 <p>In geometry, a <strong>dodecahedron</strong> is any <em>polyhedron with twelve flat faces</em>. The most familiar dodecahedron is the regular dodecahedron, which is a Platonic solid. There are also three regular star dodecahedra, which are constructed as stellations of the convex form. All of these have icosahedral symmetry, order 120.</p>
 
-<p><img src="images/shapes/dodecahedron.gif"></p>
+<p><img src="images/shapes/dodecahedron.gif" alt="rendered dodecahedron"></p>
 
 <p><code class="prettyprint">WHS.Dodecahedron</code> creates Dodecahedron object by it&rsquo;s <code class="prettyprint">radius</code> and <code class="prettyprint">detail</code>.</p>
 
@@ -1243,7 +1269,7 @@ This function checks for <code class="prettyprint">kind</code> property and turn
 
 <p>In elementary geometry, a <strong>polyhedron</strong> is <em>a solid in three dimensions with flat polygonal faces, straight edges and sharp corners or vertices</em>.</p>
 
-<p><img src="images/shapes/polyhedron.gif"></p>
+<p><img src="images/shapes/polyhedron.gif" alt="rendered polyhedron"></p>
 
 <p><code class="prettyprint">WHS.Polyhedron</code> creates Polyhedron object by it&rsquo;s <code class="prettyprint">radius</code> and <code class="prettyprint">detail</code>.</p>
 
@@ -1321,7 +1347,7 @@ This function checks for <code class="prettyprint">kind</code> property and turn
 <p>In geometry, an <strong>icosahedron</strong> is a polyhedron with 20 faces.
 There are many kinds of icosahedra, with some being more symmetrical than others. The most well known is the Platonic, convex regular icosahedron. </p>
 
-<p><img src="images/shapes/icosahedron.gif"></p>
+<p><img src="images/shapes/icosahedron.gif" alt="rendered icosahedron"></p>
 
 <p><code class="prettyprint">WHS.Icosahedron</code> creates Icosahedron object by it&rsquo;s <code class="prettyprint">radius</code> and <code class="prettyprint">detail</code>.</p>
 
@@ -1388,7 +1414,7 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 
 <p>In geometry, an <strong>octahedron</strong> is <em>a polyhedron with eight faces</em>. A regular octahedron is a Platonic solid composed of eight equilateral triangles, four of which meet at each vertex.</p>
 
-<p><img src="images/shapes/octahedron.gif"></p>
+<p><img src="images/shapes/octahedron.gif" alt="rendered octahedron"></p>
 
 <p><code class="prettyprint">WHS.Octahedron</code> creates Octahedron object by it&rsquo;s <code class="prettyprint">radius</code> and <code class="prettyprint">detail</code>.</p>
 
@@ -1455,7 +1481,7 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 
 <p>In geometry, a <strong>tetrahedron</strong> is <em>a polyhedron composed of four triangular faces, six straight edges, and four vertex corners</em>. The tetrahedron is the simplest of all the ordinary convex polyhedra and the only one that has fewer than 5 faces.</p>
 
-<p><img src="images/shapes/tetrahedron.gif"></p>
+<p><img src="images/shapes/tetrahedron.gif" alt="rendered tetrahedron"></p>
 
 <p><code class="prettyprint">WHS.Tetrahedron</code> creates Tetrahedron object by it&rsquo;s <code class="prettyprint">radius</code> and <code class="prettyprint">detail</code>.</p>
 
@@ -1567,7 +1593,7 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 
 <p>And a <code class="prettyprint">Physijs mesh</code>, that is similar to <code class="prettyprint">Three.js mesh</code>, but it also participates in collision calculations. This mesh is a combination of <code class="prettyprint">Three.js geometry</code> and <code class="prettyprint">Physijs material</code> (The same as in three.js, but with friction and restitution).</p>
 
-<p><img src="images/shapes/extrude.png"></p>
+<p><img src="images/shapes/extrude.png" alt="rendered extrude from it's example"></p>
 
           <h2 class="ws" id="lathe">Lathe [Class]</h2>
 
@@ -1664,7 +1690,7 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 
 <p>Right example will create the following shape: </p>
 
-<p><img src="images/shapes/lathe.png"></p>
+<p><img src="images/shapes/lathe.png" alt="rendered lathe on it's example"></p>
 
           <h2 class="ws" id="model">Model [Class]</h2>
 
@@ -1752,7 +1778,7 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 
 <p>Similar one is <code class="prettyprint">WHS.Morph</code>. It&rsquo;s like a model, but this one supports animations.</p>
 
-<p><img src="images/shapes/model.png"></p>
+<p><img src="images/shapes/model.png" alt="physics and for rendering model created with whitestorm.js"></p>
 
           <h2 class="ws" id="morph">Morph [Class]</h2>
 
@@ -1826,11 +1852,11 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 
 <p>Right example will create the following:</p>
 
-<p><img src="images/shapes/morph.png"></p>
+<p><img src="images/shapes/morph.png" alt="first morph keyframe"></p>
 
 <p>And each frame it will change:</p>
 
-<p><img src="images/shapes/morph2.png"></p>
+<p><img src="images/shapes/morph2.png" alt="another morph keyframe"></p>
 
 <aside class="notice">
     This class use <code>morph</code> property in <code>WHS.Shape</code>. You need to specify <code>duration</code> and <code>speed</code> settings.
@@ -1915,7 +1941,7 @@ There are many kinds of icosahedra, with some being more symmetrical than others
 <p>Example will create heightfield-like geometry. <code class="prettyprint">u</code> and <code class="prettyprint">v</code> are like <code class="prettyprint">x</code> and <code class="prettyprint">y</code> in shape, but their values are always from <code class="prettyprint">0</code> to <code class="prettyprint">1</code>.
 We use them in <code class="prettyprint">THREE.Vector3</code> like <code class="prettyprint">x</code> and <code class="prettyprint">z</code> and <code class="prettyprint">Math.random()</code> for <code class="prettyprint">y</code>.</p>
 
-<p><img src="images/shapes/parametric.png"></p>
+<p><img src="images/shapes/parametric.png" alt="rendered parametric on it's example"></p>
 
           <h2 class="ws" id="ring">Ring [Class]</h2>
 
@@ -1991,7 +2017,7 @@ We use them in <code class="prettyprint">THREE.Vector3</code> like <code class="
 <code>WHS.Ring</code> doesn&rsquo;t support physics, so if you want to make it with physics - you can use <code>WHS.Torus</code> and scale it <code>x</code> 1/(your torus outerRadius - innerRadius), so it&rsquo;s width will be 1 and then multiply by value near 0 to make it very thin.
 </aside>
 
-<p><img src="images/shapes/ring.png"></p>
+<p><img src="images/shapes/ring.png" alt="ring shape"></p>
 
 <aside class="warning">Need to be fixed. In progress.</aside>
 
@@ -2160,7 +2186,7 @@ We use them in <code class="prettyprint">THREE.Vector3</code> like <code class="
 
 <script src="https://gist.github.com/sasha240100/158b43f76862cf606c06.js"></script>
 
-<p><img src="images/shapes/text.png"></p>
+<p><img src="images/shapes/text.png" alt="rendered text on it's example"></p>
 
           <h2 class="ws" id="torus">Torus [Class]</h2>
 
@@ -2247,7 +2273,7 @@ We use them in <code class="prettyprint">THREE.Vector3</code> like <code class="
 
 <script src="https://gist.github.com/sasha240100/c320e12f7e594c48fb8e.js"></script>
 
-<p><img src="images/shapes/torus.png"></p>
+<p><img src="images/shapes/torus.png" alt="rendered torus on it's example"></p>
 
           <h2 class="ws" id="torusknot">Torusknot [Class]</h2>
 
@@ -2349,7 +2375,7 @@ We use them in <code class="prettyprint">THREE.Vector3</code> like <code class="
 
 <script src="https://gist.github.com/sasha240100/186976e65a13e62ec333.js"></script>
 
-<p><img src="images/shapes/torusknot.png"></p>
+<p><img src="images/shapes/torusknot.png" alt="torusknot shape"></p>
 
           <h2 class="ws" id="tube">Tube [Class]</h2>
 
@@ -2963,7 +2989,7 @@ Many different genres have made use of first-person perspectives, ranging from a
 </tr>
 </tbody></table>
 
-<p><img src="images/skybox.png"></p>
+<p><img src="images/skybox.png" alt="Skybox in fps example."></p>
 
           <h1 id="adding-plugins-amp-components">Adding Plugins &amp; Components</h1>
 
