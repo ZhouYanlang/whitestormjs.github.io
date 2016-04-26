@@ -3055,7 +3055,9 @@ window.mobileAndTabletcheck = function() {
   return check;
 }
 
-if(window.mobileAndTabletcheck) {
+console.log(!window.mobileAndTabletcheck());
+
+if(!window.mobileAndTabletcheck()) {
 
 $('.splash').on('click', function() {
     $(this).hide();
