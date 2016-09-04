@@ -360,7 +360,7 @@
 
 <h1 id="core">Core</h1>
 
-          <h2 id="object">Object</h2>
+          <h2 id="coreobject">CoreObject</h2>
 
 <blockquote class="section">
   <header>Methods:</header>
@@ -5099,6 +5099,77 @@ As you know, <code class="prettyprint">whitestorm.js</code> uses <code class="pr
     </tr>
   </table>
 </blockquote>
+
+<p><strong>r11</strong></p>
+
+<ul>
+<li><em>Bug fixes</em></li>
+<li><code class="prettyprint">DOFConstraint</code> added.</li>
+<li>Loop
+
+<ul>
+<li>Added shorthand for <code class="prettyprint">.addLoop()</code> and <code class="prettyprint">.removeLoop()</code></li>
+</ul></li>
+<li>List
+
+<ul>
+<li>Added <code class="prettyprint">.get()</code> method.</li>
+</ul></li>
+<li>World
+
+<ul>
+<li><code class="prettyprint">.addLoop()</code> and <code class="prettyprint">.removeLoop()</code> now return Promises.</li>
+<li>Added proper <code class="prettyprint">.remove()</code> function.</li>
+</ul></li>
+<li>CoreObject
+
+<ul>
+<li><code class="prettyprint">Object</code> renamed to <code class="prettyprint">CoreObject</code></li>
+<li>Added proper <code class="prettyprint">.remove()</code> function.</li>
+</ul></li>
+<li>Lights
+
+<ul>
+<li>Fixed <code class="prettyprint">target</code> option. Now works with Object3D and Vector3(both).</li>
+</ul></li>
+<li>STRUCTURE
+
+<ul>
+<li>Added modularity</li>
+<li>Optimized for webpack usage.</li>
+<li>Webpack build transformed to UMD.</li>
+<li><code class="prettyprint">src</code> now consist of <code class="prettyprint">examples</code> and <code class="prettyprint">framework</code></li>
+<li>Fixed <code class="prettyprint">_assets</code> folder.</li>
+<li>Removed unused <code class="prettyprint">_lib/</code> folder</li>
+<li>Removed <code class="prettyprint">_temp</code> folder.</li>
+</ul></li>
+<li>OPTIMIZATION
+
+<ul>
+<li>Removed unused dependencies in package.json</li>
+</ul></li>
+<li>EXAMPLES
+
+<ul>
+<li>Fixed <code class="prettyprint">performance/softbodies</code> example.</li>
+<li>Added <code class="prettyprint">basic/cloth</code> example.</li>
+<li>Added <code class="prettyprint">basic/cloth2</code> example.</li>
+<li>Added <code class="prettyprint">basic/cloth3</code> example.</li>
+</ul></li>
+<li>TESTS.
+
+<ul>
+<li>Added unit tests:</li>
+<li><code class="prettyprint">core/</code></li>
+<li><code class="prettyprint">meshes/</code></li>
+<li><code class="prettyprint">cameras/</code></li>
+<li><code class="prettyprint">utils/</code></li>
+<li><code class="prettyprint">extras/</code></li>
+<li><code class="prettyprint">lights/</code></li>
+<li>Fixed Travis CI.</li>
+</ul></li>
+<li>Three.js version updated to r80.</li>
+</ul>
 
 <p><strong>r10</strong></p>
 
